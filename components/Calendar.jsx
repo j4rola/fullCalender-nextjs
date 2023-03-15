@@ -81,11 +81,10 @@ function renderEventContent(eventInfo) {
   
   console.log(eventInfo.event._def.extendedProps.description)
   return (
-    <>
+    <div className='d-flex flex-column'>
       <b>{eventInfo.timeText}</b>
-      
       <i>{eventInfo.event.title }</i>
       <p>{eventInfo.event._def.extendedProps.description}</p> 
-    </>
+    </div>
   )
 }

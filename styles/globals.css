@@ -14,13 +14,3 @@ a {
 * {
   box-sizing: border-box;
 }
-
-@media screen and (max-width: 900px) { 
-
-  #test {
-     
-    opacity: 0;
-
-  } 
-
-}
