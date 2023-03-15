@@ -5,7 +5,7 @@ import interactionPlugin from "@fullcalendar/interaction"
 import { useState, useEffect, useRef } from 'react'
 
 
-export default function Calendar() {
+export default function Calendar() {  
 
   const calendarRef = useRef(null);
   const [activeView, setActiveView] = useState("dayGridMonth")
@@ -39,7 +39,7 @@ export default function Calendar() {
       console.log(window)
       if (window.innerWidth > 900) {
         setActiveView("dayGridMonth")
-      } else { setActiveView("listWeek")}
+      } else { setActiveView("listMonth")}
 
    }}, []);
   
