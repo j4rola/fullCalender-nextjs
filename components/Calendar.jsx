@@ -46,9 +46,19 @@ export default function Calendar() {
 
     const events = [
 
-      { title: 'Meeting', start: '2023-03-09T22:54:52.289Z', description: 'Another meeting!' }, 
-      { title: 'Meeting', start: '2023-03-10T22:30:52.289Z', description: 'Another annoying meeting!' }
+      { title: 'Meeting', start: '2023-03-09T22:54:52.289Z', description: 'Another meeting!', meridiem: 'short' }, 
+      { title: 'Meeting', start: '2023-03-10T22:30:52.289Z', description: 'Another annoying meeting!', meridiem: 'short' }
+      
     ]
+
+    const views = {
+      dayGridMonth: { // name of view
+        eventTimeFormat: {  hour: 'numeric',
+        minute: '2-digit',
+        meridiem: 'short' }
+        // other view-specific options here
+      }
+    }
 
     
 
@@ -71,6 +81,7 @@ export default function Calendar() {
         weekends={false}
         events={events}
         eventContent={renderEventContent}
+        views={views}
       />
       
     </div>)
