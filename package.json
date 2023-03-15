@@ -9,8 +9,17 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@fullcalendar/core": "^6.1.4",
+    "@fullcalendar/daygrid": "^6.1.4",
+    "@fullcalendar/interaction": "^6.1.4",
+    "@fullcalendar/list": "^6.1.4",
+    "@fullcalendar/react": "^6.1.4",
+    "bootstrap": "^5.2.3",
+    "google-auth-library": "^8.7.0",
+    "googleapis": "^112.0.0",
     "next": "13.2.3",
     "react": "18.2.0",
+    "react-bootstrap": "^2.7.2",
     "react-dom": "18.2.0"
   },
   "devDependencies": {
