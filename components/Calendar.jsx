@@ -47,7 +47,7 @@ export default function Calendar() {
     const events = [
 
       { title: 'Meeting', start: '2023-03-09T22:54:52.289Z', description: 'Another meeting!' }, 
-      { title: 'Meeting', start: '2023-03-10T22:30:52.289Z', description: 'Another meeting!' }
+      { title: 'Meeting', start: '2023-03-10T22:30:52.289Z', description: 'Another annoying meeting!' }
     ]
 
     
@@ -77,11 +77,15 @@ export default function Calendar() {
   
 }
 
-function renderEventContent(eventInfo) {
+function renderEventContent(eventInfo) { 
+  
+  console.log(eventInfo.event._def.extendedProps.description)
   return (
     <>
       <b>{eventInfo.timeText}</b>
-      <i>{eventInfo.event.title}</i>
+      
+      <i>{eventInfo.event.title }</i>
+      <p>{eventInfo.event._def.extendedProps.description}</p> 
     </>
   )
 }
